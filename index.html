@@ -3,19 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Preview Card</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Blog Card</title>
+  <style>
+    .card {
+      max-width: 350px;                 
+      border-radius: 12px;              
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+      overflow: hidden;
+      background-color: #fff;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .card__image {
+      width: 100%;
+      display: block;
+    }
+
+    .card__content {
+      padding: 16px;                    
+      display: flex;
+      flex-direction: column;
+      gap: 8px;                         
+    }
+
+    .card__category {
+      font-size: 0.9rem;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    .card__date {
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .card__title {
+      font-size: 1.3rem;
+      margin: 0;
+    }
+
+    .card__text {
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #333;
+    }
+
+    .card__author {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: auto;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, Blog Card!</h1>
-
-  <div class="blog-card">
-    <img src="https://via.placeholder.com/350x150" alt="Blog image" class="blog-card-img">
-    <div class="blog-card-content">
-      <h2 class="blog-card-title">Назва блогу</h2>
-      <p class="blog-card-text"
+  <div class="card">
+    <img src="https://via.placeholder.com/350x150" alt="Blog image" class="card__image">
+    <div class="card__content">
+      <span class="card__category">Категорія: Технології</span>
+      <small class="card__date">29 вересня 2025</small>
+      <h2 class="card__title">Як створити сучасну картку блогу</h2>
+      <p class="card__text">
+        Ця картка блогу демонструє використання семантичних тегів, правильну структуру та сучасний CSS-макет.
       </p>
-      <a href="#" class="blog-card-link">Читати далі</a>
+      <span class="card__author">Автор: Артем</span>
     </div>
   </div>
 </body>
